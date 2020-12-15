@@ -1,0 +1,3134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ObtieneDatosFuncionarioXCed">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empced" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtieneDatosFuncionarioXCedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtieneDatosFuncionarioXCedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtieneDomicilio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empced" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtieneDomicilioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtieneDomicilioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtieneDatosFuncionarioXNombre">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Primer_Apellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Segundo_Apellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtieneDatosFuncionarioXNombreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtieneDatosFuncionarioXNombreResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidarCedulaUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Cedula" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidarCedulaUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidarCedulaUsuarioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerDatosFuncionario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Identificacion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerDatosFuncionarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerDatosFuncionarioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaEstadoFuncionario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Identificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fecha_dd_mm_yyyy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaEstadoFuncionarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaEstadoFuncionarioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EjecutaConsultaFuncionariosActivos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Consulta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EjecutaConsultaFuncionariosActivosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EjecutaConsultaFuncionariosActivosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaAccionesXFuncionario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Identificacion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaAccionesXFuncionarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaAccionesXFuncionarioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaP21XFuncionario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Cedula" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaP21XFuncionarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaP21XFuncionarioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDetalleP21">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Id_Gestion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDetalleP21Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaDetalleP21Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDetalleP21Lecciones">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Id_Gestion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDetalleP21LeccionesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaDetalleP21LeccionesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDetalleP21Componentes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Id_Gestion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDetalleP21ComponentesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaDetalleP21ComponentesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDetalleP21EstadoPresente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Id_Gestion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDetalleP21EstadoPresenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaDetalleP21EstadoPresenteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDetalleP21LeccEstadoP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Id_Gestion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDetalleP21LeccEstadoPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaDetalleP21LeccEstadoPResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDetalleP21CompEstadoP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Id_Gestion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDetalleP21CompEstadoPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaDetalleP21CompEstadoPResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerCatalogoDireccionesRegionales">
+        <s:complexType />
+      </s:element>
+      <s:element name="ObtenerCatalogoDireccionesRegionalesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerCatalogoDireccionesRegionalesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDependencias">
+        <s:complexType />
+      </s:element>
+      <s:element name="ConsultaDependenciasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaDependenciasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerCatalogoCentrosEducativos">
+        <s:complexType />
+      </s:element>
+      <s:element name="ObtenerCatalogoCentrosEducativosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerCatalogoCentrosEducativosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerCatalogoClaseDePuestos">
+        <s:complexType />
+      </s:element>
+      <s:element name="ObtenerCatalogoClaseDePuestosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerCatalogoClaseDePuestosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerCatalogoEspecialidades">
+        <s:complexType />
+      </s:element>
+      <s:element name="ObtenerCatalogoEspecialidadesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerCatalogoEspecialidadesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDependenciaxCodigo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDependenciaxCodigoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaDependenciaxCodigoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaSuprograma00">
+        <s:complexType />
+      </s:element>
+      <s:element name="ConsultaSuprograma00Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaSuprograma00Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidaDependencia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CPresupuestario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidaDependenciaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidaDependenciaResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDependencia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDependenciaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaDependenciaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarEscalaSalarialRige">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Año" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mes" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarEscalaSalarialRigeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarEscalaSalarialRigeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaNombramientosXFuncionario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Cedula" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaNombramientosXFuncionarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaNombramientosXFuncionarioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaNombramientosXInstitucion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CodPresupuestario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaNombramientosXInstitucionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaNombramientosXInstitucionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaINSTITUCIONESXFUNCIONARIO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Identificacion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaINSTITUCIONESXFUNCIONARIOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaINSTITUCIONESXFUNCIONARIOResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IDP_ConsultaCiruitosXRegion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Region" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IDP_ConsultaCiruitosXRegionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IDP_ConsultaCiruitosXRegionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IDP_ConsultaDependenciaXRegion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Region" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IDP_ConsultaDependenciaXRegionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IDP_ConsultaDependenciaXRegionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IDP_ConsultaFuncionariosXDependencia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Dependencia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IDP_ConsultaFuncionariosXDependenciaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IDP_ConsultaFuncionariosXDependenciaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarInfoFuncionarioViaticos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empced" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarInfoFuncionarioViaticosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarInfoFuncionarioViaticosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaOcupacionPlaza">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="plaza" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaOcupacionPlazaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaOcupacionPlazaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarPlazaVacante">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Consulta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarPlazaVacanteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarPlazaVacanteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaLeccionesInstitucion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Codigo_Completo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fecha" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaLeccionesInstitucionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaLeccionesInstitucionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaProduccionNombramientos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Periodo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaProduccionNombramientosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ConsultaProduccionNombramientosResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="int" type="s:int" />
+      <s:element name="double" type="s:double" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ObtieneDatosFuncionarioXCedSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtieneDatosFuncionarioXCed" />
+  </wsdl:message>
+  <wsdl:message name="ObtieneDatosFuncionarioXCedSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtieneDatosFuncionarioXCedResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtieneDomicilioSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtieneDomicilio" />
+  </wsdl:message>
+  <wsdl:message name="ObtieneDomicilioSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtieneDomicilioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtieneDatosFuncionarioXNombreSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtieneDatosFuncionarioXNombre" />
+  </wsdl:message>
+  <wsdl:message name="ObtieneDatosFuncionarioXNombreSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtieneDatosFuncionarioXNombreResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidarCedulaUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidarCedulaUsuario" />
+  </wsdl:message>
+  <wsdl:message name="ValidarCedulaUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidarCedulaUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerDatosFuncionarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerDatosFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerDatosFuncionarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerDatosFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaEstadoFuncionarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaEstadoFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaEstadoFuncionarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaEstadoFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="EjecutaConsultaFuncionariosActivosSoapIn">
+    <wsdl:part name="parameters" element="tns:EjecutaConsultaFuncionariosActivos" />
+  </wsdl:message>
+  <wsdl:message name="EjecutaConsultaFuncionariosActivosSoapOut">
+    <wsdl:part name="parameters" element="tns:EjecutaConsultaFuncionariosActivosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaAccionesXFuncionarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaAccionesXFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaAccionesXFuncionarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaAccionesXFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaP21XFuncionarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaP21XFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaP21XFuncionarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaP21XFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21SoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaDetalleP21" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21SoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaDetalleP21Response" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21LeccionesSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaDetalleP21Lecciones" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21LeccionesSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaDetalleP21LeccionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21ComponentesSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaDetalleP21Componentes" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21ComponentesSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaDetalleP21ComponentesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21EstadoPresenteSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaDetalleP21EstadoPresente" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21EstadoPresenteSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaDetalleP21EstadoPresenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21LeccEstadoPSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaDetalleP21LeccEstadoP" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21LeccEstadoPSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaDetalleP21LeccEstadoPResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21CompEstadoPSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaDetalleP21CompEstadoP" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21CompEstadoPSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaDetalleP21CompEstadoPResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCatalogoDireccionesRegionalesSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerCatalogoDireccionesRegionales" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCatalogoDireccionesRegionalesSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerCatalogoDireccionesRegionalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDependenciasSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaDependencias" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDependenciasSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaDependenciasResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCatalogoCentrosEducativosSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerCatalogoCentrosEducativos" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCatalogoCentrosEducativosSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerCatalogoCentrosEducativosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCatalogoClaseDePuestosSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerCatalogoClaseDePuestos" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCatalogoClaseDePuestosSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerCatalogoClaseDePuestosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCatalogoEspecialidadesSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerCatalogoEspecialidades" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCatalogoEspecialidadesSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerCatalogoEspecialidadesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDependenciaxCodigoSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaDependenciaxCodigo" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDependenciaxCodigoSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaDependenciaxCodigoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaSuprograma00SoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaSuprograma00" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaSuprograma00SoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaSuprograma00Response" />
+  </wsdl:message>
+  <wsdl:message name="ValidaDependenciaSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidaDependencia" />
+  </wsdl:message>
+  <wsdl:message name="ValidaDependenciaSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidaDependenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDependenciaSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaDependencia" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDependenciaSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaDependenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarEscalaSalarialRigeSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarEscalaSalarialRige" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarEscalaSalarialRigeSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarEscalaSalarialRigeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaNombramientosXFuncionarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaNombramientosXFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaNombramientosXFuncionarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaNombramientosXFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaNombramientosXInstitucionSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaNombramientosXInstitucion" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaNombramientosXInstitucionSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaNombramientosXInstitucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaINSTITUCIONESXFUNCIONARIOSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaINSTITUCIONESXFUNCIONARIO" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaINSTITUCIONESXFUNCIONARIOSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaINSTITUCIONESXFUNCIONARIOResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDP_ConsultaCiruitosXRegionSoapIn">
+    <wsdl:part name="parameters" element="tns:IDP_ConsultaCiruitosXRegion" />
+  </wsdl:message>
+  <wsdl:message name="IDP_ConsultaCiruitosXRegionSoapOut">
+    <wsdl:part name="parameters" element="tns:IDP_ConsultaCiruitosXRegionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDP_ConsultaDependenciaXRegionSoapIn">
+    <wsdl:part name="parameters" element="tns:IDP_ConsultaDependenciaXRegion" />
+  </wsdl:message>
+  <wsdl:message name="IDP_ConsultaDependenciaXRegionSoapOut">
+    <wsdl:part name="parameters" element="tns:IDP_ConsultaDependenciaXRegionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDP_ConsultaFuncionariosXDependenciaSoapIn">
+    <wsdl:part name="parameters" element="tns:IDP_ConsultaFuncionariosXDependencia" />
+  </wsdl:message>
+  <wsdl:message name="IDP_ConsultaFuncionariosXDependenciaSoapOut">
+    <wsdl:part name="parameters" element="tns:IDP_ConsultaFuncionariosXDependenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarInfoFuncionarioViaticosSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarInfoFuncionarioViaticos" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarInfoFuncionarioViaticosSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarInfoFuncionarioViaticosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaOcupacionPlazaSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaOcupacionPlaza" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaOcupacionPlazaSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaOcupacionPlazaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarPlazaVacanteSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarPlazaVacante" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarPlazaVacanteSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarPlazaVacanteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaLeccionesInstitucionSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaLeccionesInstitucion" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaLeccionesInstitucionSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaLeccionesInstitucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaProduccionNombramientosSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaProduccionNombramientos" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaProduccionNombramientosSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaProduccionNombramientosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtieneDatosFuncionarioXCedHttpGetIn">
+    <wsdl:part name="empced" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ObtieneDatosFuncionarioXCedHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ObtieneDomicilioHttpGetIn">
+    <wsdl:part name="empced" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ObtieneDomicilioHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ObtieneDatosFuncionarioXNombreHttpGetIn">
+    <wsdl:part name="Primer_Apellido" type="s:string" />
+    <wsdl:part name="Segundo_Apellido" type="s:string" />
+    <wsdl:part name="Nombre" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ObtieneDatosFuncionarioXNombreHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ValidarCedulaUsuarioHttpGetIn">
+    <wsdl:part name="Cedula" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidarCedulaUsuarioHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerDatosFuncionarioHttpGetIn">
+    <wsdl:part name="Identificacion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerDatosFuncionarioHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaEstadoFuncionarioHttpGetIn">
+    <wsdl:part name="Identificacion" type="s:string" />
+    <wsdl:part name="Fecha_dd_mm_yyyy" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaEstadoFuncionarioHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="EjecutaConsultaFuncionariosActivosHttpGetIn">
+    <wsdl:part name="Consulta" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EjecutaConsultaFuncionariosActivosHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaAccionesXFuncionarioHttpGetIn">
+    <wsdl:part name="Identificacion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaAccionesXFuncionarioHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaP21XFuncionarioHttpGetIn">
+    <wsdl:part name="Cedula" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaP21XFuncionarioHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21HttpGetIn">
+    <wsdl:part name="Id_Gestion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21HttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21LeccionesHttpGetIn">
+    <wsdl:part name="Id_Gestion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21LeccionesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21ComponentesHttpGetIn">
+    <wsdl:part name="Id_Gestion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21ComponentesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21EstadoPresenteHttpGetIn">
+    <wsdl:part name="Id_Gestion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21EstadoPresenteHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21LeccEstadoPHttpGetIn">
+    <wsdl:part name="Id_Gestion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21LeccEstadoPHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21CompEstadoPHttpGetIn">
+    <wsdl:part name="Id_Gestion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21CompEstadoPHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCatalogoDireccionesRegionalesHttpGetIn" />
+  <wsdl:message name="ObtenerCatalogoDireccionesRegionalesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDependenciasHttpGetIn" />
+  <wsdl:message name="ConsultaDependenciasHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCatalogoCentrosEducativosHttpGetIn" />
+  <wsdl:message name="ObtenerCatalogoCentrosEducativosHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCatalogoClaseDePuestosHttpGetIn" />
+  <wsdl:message name="ObtenerCatalogoClaseDePuestosHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCatalogoEspecialidadesHttpGetIn" />
+  <wsdl:message name="ObtenerCatalogoEspecialidadesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDependenciaxCodigoHttpGetIn">
+    <wsdl:part name="codigo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDependenciaxCodigoHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaSuprograma00HttpGetIn" />
+  <wsdl:message name="ConsultaSuprograma00HttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ValidaDependenciaHttpGetIn">
+    <wsdl:part name="CPresupuestario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidaDependenciaHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDependenciaHttpGetIn">
+    <wsdl:part name="codigo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDependenciaHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarEscalaSalarialRigeHttpGetIn">
+    <wsdl:part name="Año" type="s:string" />
+    <wsdl:part name="Mes" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarEscalaSalarialRigeHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaNombramientosXFuncionarioHttpGetIn">
+    <wsdl:part name="Cedula" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaNombramientosXFuncionarioHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaNombramientosXInstitucionHttpGetIn">
+    <wsdl:part name="CodPresupuestario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaNombramientosXInstitucionHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaINSTITUCIONESXFUNCIONARIOHttpGetIn">
+    <wsdl:part name="Identificacion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaINSTITUCIONESXFUNCIONARIOHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="IDP_ConsultaCiruitosXRegionHttpGetIn">
+    <wsdl:part name="Region" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IDP_ConsultaCiruitosXRegionHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="IDP_ConsultaDependenciaXRegionHttpGetIn">
+    <wsdl:part name="Region" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IDP_ConsultaDependenciaXRegionHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="IDP_ConsultaFuncionariosXDependenciaHttpGetIn">
+    <wsdl:part name="Dependencia" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IDP_ConsultaFuncionariosXDependenciaHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarInfoFuncionarioViaticosHttpGetIn">
+    <wsdl:part name="empced" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarInfoFuncionarioViaticosHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaOcupacionPlazaHttpGetIn">
+    <wsdl:part name="plaza" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaOcupacionPlazaHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarPlazaVacanteHttpGetIn">
+    <wsdl:part name="Consulta" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarPlazaVacanteHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaLeccionesInstitucionHttpGetIn">
+    <wsdl:part name="Codigo_Completo" type="s:string" />
+    <wsdl:part name="Fecha" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaLeccionesInstitucionHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaProduccionNombramientosHttpGetIn">
+    <wsdl:part name="Periodo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaProduccionNombramientosHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="ObtieneDatosFuncionarioXCedHttpPostIn">
+    <wsdl:part name="empced" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ObtieneDatosFuncionarioXCedHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ObtieneDomicilioHttpPostIn">
+    <wsdl:part name="empced" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ObtieneDomicilioHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ObtieneDatosFuncionarioXNombreHttpPostIn">
+    <wsdl:part name="Primer_Apellido" type="s:string" />
+    <wsdl:part name="Segundo_Apellido" type="s:string" />
+    <wsdl:part name="Nombre" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ObtieneDatosFuncionarioXNombreHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ValidarCedulaUsuarioHttpPostIn">
+    <wsdl:part name="Cedula" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidarCedulaUsuarioHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerDatosFuncionarioHttpPostIn">
+    <wsdl:part name="Identificacion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerDatosFuncionarioHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaEstadoFuncionarioHttpPostIn">
+    <wsdl:part name="Identificacion" type="s:string" />
+    <wsdl:part name="Fecha_dd_mm_yyyy" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaEstadoFuncionarioHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="EjecutaConsultaFuncionariosActivosHttpPostIn">
+    <wsdl:part name="Consulta" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EjecutaConsultaFuncionariosActivosHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaAccionesXFuncionarioHttpPostIn">
+    <wsdl:part name="Identificacion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaAccionesXFuncionarioHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaP21XFuncionarioHttpPostIn">
+    <wsdl:part name="Cedula" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaP21XFuncionarioHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21HttpPostIn">
+    <wsdl:part name="Id_Gestion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21HttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21LeccionesHttpPostIn">
+    <wsdl:part name="Id_Gestion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21LeccionesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21ComponentesHttpPostIn">
+    <wsdl:part name="Id_Gestion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21ComponentesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21EstadoPresenteHttpPostIn">
+    <wsdl:part name="Id_Gestion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21EstadoPresenteHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21LeccEstadoPHttpPostIn">
+    <wsdl:part name="Id_Gestion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21LeccEstadoPHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21CompEstadoPHttpPostIn">
+    <wsdl:part name="Id_Gestion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDetalleP21CompEstadoPHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCatalogoDireccionesRegionalesHttpPostIn" />
+  <wsdl:message name="ObtenerCatalogoDireccionesRegionalesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDependenciasHttpPostIn" />
+  <wsdl:message name="ConsultaDependenciasHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCatalogoCentrosEducativosHttpPostIn" />
+  <wsdl:message name="ObtenerCatalogoCentrosEducativosHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCatalogoClaseDePuestosHttpPostIn" />
+  <wsdl:message name="ObtenerCatalogoClaseDePuestosHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCatalogoEspecialidadesHttpPostIn" />
+  <wsdl:message name="ObtenerCatalogoEspecialidadesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDependenciaxCodigoHttpPostIn">
+    <wsdl:part name="codigo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDependenciaxCodigoHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaSuprograma00HttpPostIn" />
+  <wsdl:message name="ConsultaSuprograma00HttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ValidaDependenciaHttpPostIn">
+    <wsdl:part name="CPresupuestario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidaDependenciaHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDependenciaHttpPostIn">
+    <wsdl:part name="codigo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDependenciaHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarEscalaSalarialRigeHttpPostIn">
+    <wsdl:part name="Año" type="s:string" />
+    <wsdl:part name="Mes" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarEscalaSalarialRigeHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaNombramientosXFuncionarioHttpPostIn">
+    <wsdl:part name="Cedula" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaNombramientosXFuncionarioHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaNombramientosXInstitucionHttpPostIn">
+    <wsdl:part name="CodPresupuestario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaNombramientosXInstitucionHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaINSTITUCIONESXFUNCIONARIOHttpPostIn">
+    <wsdl:part name="Identificacion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaINSTITUCIONESXFUNCIONARIOHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="IDP_ConsultaCiruitosXRegionHttpPostIn">
+    <wsdl:part name="Region" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IDP_ConsultaCiruitosXRegionHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="IDP_ConsultaDependenciaXRegionHttpPostIn">
+    <wsdl:part name="Region" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IDP_ConsultaDependenciaXRegionHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="IDP_ConsultaFuncionariosXDependenciaHttpPostIn">
+    <wsdl:part name="Dependencia" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IDP_ConsultaFuncionariosXDependenciaHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarInfoFuncionarioViaticosHttpPostIn">
+    <wsdl:part name="empced" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarInfoFuncionarioViaticosHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaOcupacionPlazaHttpPostIn">
+    <wsdl:part name="plaza" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaOcupacionPlazaHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarPlazaVacanteHttpPostIn">
+    <wsdl:part name="Consulta" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarPlazaVacanteHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaLeccionesInstitucionHttpPostIn">
+    <wsdl:part name="Codigo_Completo" type="s:string" />
+    <wsdl:part name="Fecha" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaLeccionesInstitucionHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaProduccionNombramientosHttpPostIn">
+    <wsdl:part name="Periodo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaProduccionNombramientosHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:portType name="WebIntegraSoap">
+    <wsdl:operation name="ObtieneDatosFuncionarioXCed">
+      <wsdl:input message="tns:ObtieneDatosFuncionarioXCedSoapIn" />
+      <wsdl:output message="tns:ObtieneDatosFuncionarioXCedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneDomicilio">
+      <wsdl:input message="tns:ObtieneDomicilioSoapIn" />
+      <wsdl:output message="tns:ObtieneDomicilioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneDatosFuncionarioXNombre">
+      <wsdl:input message="tns:ObtieneDatosFuncionarioXNombreSoapIn" />
+      <wsdl:output message="tns:ObtieneDatosFuncionarioXNombreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarCedulaUsuario">
+      <wsdl:input message="tns:ValidarCedulaUsuarioSoapIn" />
+      <wsdl:output message="tns:ValidarCedulaUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDatosFuncionario">
+      <wsdl:input message="tns:ObtenerDatosFuncionarioSoapIn" />
+      <wsdl:output message="tns:ObtenerDatosFuncionarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaEstadoFuncionario">
+      <wsdl:input message="tns:ConsultaEstadoFuncionarioSoapIn" />
+      <wsdl:output message="tns:ConsultaEstadoFuncionarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EjecutaConsultaFuncionariosActivos">
+      <wsdl:input message="tns:EjecutaConsultaFuncionariosActivosSoapIn" />
+      <wsdl:output message="tns:EjecutaConsultaFuncionariosActivosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaAccionesXFuncionario">
+      <wsdl:input message="tns:ConsultaAccionesXFuncionarioSoapIn" />
+      <wsdl:output message="tns:ConsultaAccionesXFuncionarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaP21XFuncionario">
+      <wsdl:input message="tns:ConsultaP21XFuncionarioSoapIn" />
+      <wsdl:output message="tns:ConsultaP21XFuncionarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21">
+      <wsdl:input message="tns:ConsultaDetalleP21SoapIn" />
+      <wsdl:output message="tns:ConsultaDetalleP21SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21Lecciones">
+      <wsdl:input message="tns:ConsultaDetalleP21LeccionesSoapIn" />
+      <wsdl:output message="tns:ConsultaDetalleP21LeccionesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21Componentes">
+      <wsdl:input message="tns:ConsultaDetalleP21ComponentesSoapIn" />
+      <wsdl:output message="tns:ConsultaDetalleP21ComponentesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21EstadoPresente">
+      <wsdl:input message="tns:ConsultaDetalleP21EstadoPresenteSoapIn" />
+      <wsdl:output message="tns:ConsultaDetalleP21EstadoPresenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21LeccEstadoP">
+      <wsdl:input message="tns:ConsultaDetalleP21LeccEstadoPSoapIn" />
+      <wsdl:output message="tns:ConsultaDetalleP21LeccEstadoPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21CompEstadoP">
+      <wsdl:input message="tns:ConsultaDetalleP21CompEstadoPSoapIn" />
+      <wsdl:output message="tns:ConsultaDetalleP21CompEstadoPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoDireccionesRegionales">
+      <wsdl:input message="tns:ObtenerCatalogoDireccionesRegionalesSoapIn" />
+      <wsdl:output message="tns:ObtenerCatalogoDireccionesRegionalesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependencias">
+      <wsdl:input message="tns:ConsultaDependenciasSoapIn" />
+      <wsdl:output message="tns:ConsultaDependenciasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoCentrosEducativos">
+      <wsdl:input message="tns:ObtenerCatalogoCentrosEducativosSoapIn" />
+      <wsdl:output message="tns:ObtenerCatalogoCentrosEducativosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoClaseDePuestos">
+      <wsdl:input message="tns:ObtenerCatalogoClaseDePuestosSoapIn" />
+      <wsdl:output message="tns:ObtenerCatalogoClaseDePuestosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoEspecialidades">
+      <wsdl:input message="tns:ObtenerCatalogoEspecialidadesSoapIn" />
+      <wsdl:output message="tns:ObtenerCatalogoEspecialidadesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependenciaxCodigo">
+      <wsdl:input message="tns:ConsultaDependenciaxCodigoSoapIn" />
+      <wsdl:output message="tns:ConsultaDependenciaxCodigoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaSuprograma00">
+      <wsdl:input message="tns:ConsultaSuprograma00SoapIn" />
+      <wsdl:output message="tns:ConsultaSuprograma00SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidaDependencia">
+      <wsdl:input message="tns:ValidaDependenciaSoapIn" />
+      <wsdl:output message="tns:ValidaDependenciaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependencia">
+      <wsdl:input message="tns:ConsultaDependenciaSoapIn" />
+      <wsdl:output message="tns:ConsultaDependenciaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEscalaSalarialRige">
+      <wsdl:input message="tns:ConsultarEscalaSalarialRigeSoapIn" />
+      <wsdl:output message="tns:ConsultarEscalaSalarialRigeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaNombramientosXFuncionario">
+      <wsdl:input message="tns:ConsultaNombramientosXFuncionarioSoapIn" />
+      <wsdl:output message="tns:ConsultaNombramientosXFuncionarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaNombramientosXInstitucion">
+      <wsdl:input message="tns:ConsultaNombramientosXInstitucionSoapIn" />
+      <wsdl:output message="tns:ConsultaNombramientosXInstitucionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaINSTITUCIONESXFUNCIONARIO">
+      <wsdl:input message="tns:ConsultaINSTITUCIONESXFUNCIONARIOSoapIn" />
+      <wsdl:output message="tns:ConsultaINSTITUCIONESXFUNCIONARIOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaCiruitosXRegion">
+      <wsdl:input message="tns:IDP_ConsultaCiruitosXRegionSoapIn" />
+      <wsdl:output message="tns:IDP_ConsultaCiruitosXRegionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaDependenciaXRegion">
+      <wsdl:input message="tns:IDP_ConsultaDependenciaXRegionSoapIn" />
+      <wsdl:output message="tns:IDP_ConsultaDependenciaXRegionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaFuncionariosXDependencia">
+      <wsdl:input message="tns:IDP_ConsultaFuncionariosXDependenciaSoapIn" />
+      <wsdl:output message="tns:IDP_ConsultaFuncionariosXDependenciaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarInfoFuncionarioViaticos">
+      <wsdl:input message="tns:ConsultarInfoFuncionarioViaticosSoapIn" />
+      <wsdl:output message="tns:ConsultarInfoFuncionarioViaticosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOcupacionPlaza">
+      <wsdl:input message="tns:ConsultaOcupacionPlazaSoapIn" />
+      <wsdl:output message="tns:ConsultaOcupacionPlazaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPlazaVacante">
+      <wsdl:input message="tns:ConsultarPlazaVacanteSoapIn" />
+      <wsdl:output message="tns:ConsultarPlazaVacanteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaLeccionesInstitucion">
+      <wsdl:input message="tns:ConsultaLeccionesInstitucionSoapIn" />
+      <wsdl:output message="tns:ConsultaLeccionesInstitucionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaProduccionNombramientos">
+      <wsdl:input message="tns:ConsultaProduccionNombramientosSoapIn" />
+      <wsdl:output message="tns:ConsultaProduccionNombramientosSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebIntegraHttpGet">
+    <wsdl:operation name="ObtieneDatosFuncionarioXCed">
+      <wsdl:input message="tns:ObtieneDatosFuncionarioXCedHttpGetIn" />
+      <wsdl:output message="tns:ObtieneDatosFuncionarioXCedHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneDomicilio">
+      <wsdl:input message="tns:ObtieneDomicilioHttpGetIn" />
+      <wsdl:output message="tns:ObtieneDomicilioHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneDatosFuncionarioXNombre">
+      <wsdl:input message="tns:ObtieneDatosFuncionarioXNombreHttpGetIn" />
+      <wsdl:output message="tns:ObtieneDatosFuncionarioXNombreHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarCedulaUsuario">
+      <wsdl:input message="tns:ValidarCedulaUsuarioHttpGetIn" />
+      <wsdl:output message="tns:ValidarCedulaUsuarioHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDatosFuncionario">
+      <wsdl:input message="tns:ObtenerDatosFuncionarioHttpGetIn" />
+      <wsdl:output message="tns:ObtenerDatosFuncionarioHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaEstadoFuncionario">
+      <wsdl:input message="tns:ConsultaEstadoFuncionarioHttpGetIn" />
+      <wsdl:output message="tns:ConsultaEstadoFuncionarioHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EjecutaConsultaFuncionariosActivos">
+      <wsdl:input message="tns:EjecutaConsultaFuncionariosActivosHttpGetIn" />
+      <wsdl:output message="tns:EjecutaConsultaFuncionariosActivosHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaAccionesXFuncionario">
+      <wsdl:input message="tns:ConsultaAccionesXFuncionarioHttpGetIn" />
+      <wsdl:output message="tns:ConsultaAccionesXFuncionarioHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaP21XFuncionario">
+      <wsdl:input message="tns:ConsultaP21XFuncionarioHttpGetIn" />
+      <wsdl:output message="tns:ConsultaP21XFuncionarioHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21">
+      <wsdl:input message="tns:ConsultaDetalleP21HttpGetIn" />
+      <wsdl:output message="tns:ConsultaDetalleP21HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21Lecciones">
+      <wsdl:input message="tns:ConsultaDetalleP21LeccionesHttpGetIn" />
+      <wsdl:output message="tns:ConsultaDetalleP21LeccionesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21Componentes">
+      <wsdl:input message="tns:ConsultaDetalleP21ComponentesHttpGetIn" />
+      <wsdl:output message="tns:ConsultaDetalleP21ComponentesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21EstadoPresente">
+      <wsdl:input message="tns:ConsultaDetalleP21EstadoPresenteHttpGetIn" />
+      <wsdl:output message="tns:ConsultaDetalleP21EstadoPresenteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21LeccEstadoP">
+      <wsdl:input message="tns:ConsultaDetalleP21LeccEstadoPHttpGetIn" />
+      <wsdl:output message="tns:ConsultaDetalleP21LeccEstadoPHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21CompEstadoP">
+      <wsdl:input message="tns:ConsultaDetalleP21CompEstadoPHttpGetIn" />
+      <wsdl:output message="tns:ConsultaDetalleP21CompEstadoPHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoDireccionesRegionales">
+      <wsdl:input message="tns:ObtenerCatalogoDireccionesRegionalesHttpGetIn" />
+      <wsdl:output message="tns:ObtenerCatalogoDireccionesRegionalesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependencias">
+      <wsdl:input message="tns:ConsultaDependenciasHttpGetIn" />
+      <wsdl:output message="tns:ConsultaDependenciasHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoCentrosEducativos">
+      <wsdl:input message="tns:ObtenerCatalogoCentrosEducativosHttpGetIn" />
+      <wsdl:output message="tns:ObtenerCatalogoCentrosEducativosHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoClaseDePuestos">
+      <wsdl:input message="tns:ObtenerCatalogoClaseDePuestosHttpGetIn" />
+      <wsdl:output message="tns:ObtenerCatalogoClaseDePuestosHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoEspecialidades">
+      <wsdl:input message="tns:ObtenerCatalogoEspecialidadesHttpGetIn" />
+      <wsdl:output message="tns:ObtenerCatalogoEspecialidadesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependenciaxCodigo">
+      <wsdl:input message="tns:ConsultaDependenciaxCodigoHttpGetIn" />
+      <wsdl:output message="tns:ConsultaDependenciaxCodigoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaSuprograma00">
+      <wsdl:input message="tns:ConsultaSuprograma00HttpGetIn" />
+      <wsdl:output message="tns:ConsultaSuprograma00HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidaDependencia">
+      <wsdl:input message="tns:ValidaDependenciaHttpGetIn" />
+      <wsdl:output message="tns:ValidaDependenciaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependencia">
+      <wsdl:input message="tns:ConsultaDependenciaHttpGetIn" />
+      <wsdl:output message="tns:ConsultaDependenciaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEscalaSalarialRige">
+      <wsdl:input message="tns:ConsultarEscalaSalarialRigeHttpGetIn" />
+      <wsdl:output message="tns:ConsultarEscalaSalarialRigeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaNombramientosXFuncionario">
+      <wsdl:input message="tns:ConsultaNombramientosXFuncionarioHttpGetIn" />
+      <wsdl:output message="tns:ConsultaNombramientosXFuncionarioHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaNombramientosXInstitucion">
+      <wsdl:input message="tns:ConsultaNombramientosXInstitucionHttpGetIn" />
+      <wsdl:output message="tns:ConsultaNombramientosXInstitucionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaINSTITUCIONESXFUNCIONARIO">
+      <wsdl:input message="tns:ConsultaINSTITUCIONESXFUNCIONARIOHttpGetIn" />
+      <wsdl:output message="tns:ConsultaINSTITUCIONESXFUNCIONARIOHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaCiruitosXRegion">
+      <wsdl:input message="tns:IDP_ConsultaCiruitosXRegionHttpGetIn" />
+      <wsdl:output message="tns:IDP_ConsultaCiruitosXRegionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaDependenciaXRegion">
+      <wsdl:input message="tns:IDP_ConsultaDependenciaXRegionHttpGetIn" />
+      <wsdl:output message="tns:IDP_ConsultaDependenciaXRegionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaFuncionariosXDependencia">
+      <wsdl:input message="tns:IDP_ConsultaFuncionariosXDependenciaHttpGetIn" />
+      <wsdl:output message="tns:IDP_ConsultaFuncionariosXDependenciaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarInfoFuncionarioViaticos">
+      <wsdl:input message="tns:ConsultarInfoFuncionarioViaticosHttpGetIn" />
+      <wsdl:output message="tns:ConsultarInfoFuncionarioViaticosHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOcupacionPlaza">
+      <wsdl:input message="tns:ConsultaOcupacionPlazaHttpGetIn" />
+      <wsdl:output message="tns:ConsultaOcupacionPlazaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPlazaVacante">
+      <wsdl:input message="tns:ConsultarPlazaVacanteHttpGetIn" />
+      <wsdl:output message="tns:ConsultarPlazaVacanteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaLeccionesInstitucion">
+      <wsdl:input message="tns:ConsultaLeccionesInstitucionHttpGetIn" />
+      <wsdl:output message="tns:ConsultaLeccionesInstitucionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaProduccionNombramientos">
+      <wsdl:input message="tns:ConsultaProduccionNombramientosHttpGetIn" />
+      <wsdl:output message="tns:ConsultaProduccionNombramientosHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebIntegraHttpPost">
+    <wsdl:operation name="ObtieneDatosFuncionarioXCed">
+      <wsdl:input message="tns:ObtieneDatosFuncionarioXCedHttpPostIn" />
+      <wsdl:output message="tns:ObtieneDatosFuncionarioXCedHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneDomicilio">
+      <wsdl:input message="tns:ObtieneDomicilioHttpPostIn" />
+      <wsdl:output message="tns:ObtieneDomicilioHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneDatosFuncionarioXNombre">
+      <wsdl:input message="tns:ObtieneDatosFuncionarioXNombreHttpPostIn" />
+      <wsdl:output message="tns:ObtieneDatosFuncionarioXNombreHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarCedulaUsuario">
+      <wsdl:input message="tns:ValidarCedulaUsuarioHttpPostIn" />
+      <wsdl:output message="tns:ValidarCedulaUsuarioHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDatosFuncionario">
+      <wsdl:input message="tns:ObtenerDatosFuncionarioHttpPostIn" />
+      <wsdl:output message="tns:ObtenerDatosFuncionarioHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaEstadoFuncionario">
+      <wsdl:input message="tns:ConsultaEstadoFuncionarioHttpPostIn" />
+      <wsdl:output message="tns:ConsultaEstadoFuncionarioHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EjecutaConsultaFuncionariosActivos">
+      <wsdl:input message="tns:EjecutaConsultaFuncionariosActivosHttpPostIn" />
+      <wsdl:output message="tns:EjecutaConsultaFuncionariosActivosHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaAccionesXFuncionario">
+      <wsdl:input message="tns:ConsultaAccionesXFuncionarioHttpPostIn" />
+      <wsdl:output message="tns:ConsultaAccionesXFuncionarioHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaP21XFuncionario">
+      <wsdl:input message="tns:ConsultaP21XFuncionarioHttpPostIn" />
+      <wsdl:output message="tns:ConsultaP21XFuncionarioHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21">
+      <wsdl:input message="tns:ConsultaDetalleP21HttpPostIn" />
+      <wsdl:output message="tns:ConsultaDetalleP21HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21Lecciones">
+      <wsdl:input message="tns:ConsultaDetalleP21LeccionesHttpPostIn" />
+      <wsdl:output message="tns:ConsultaDetalleP21LeccionesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21Componentes">
+      <wsdl:input message="tns:ConsultaDetalleP21ComponentesHttpPostIn" />
+      <wsdl:output message="tns:ConsultaDetalleP21ComponentesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21EstadoPresente">
+      <wsdl:input message="tns:ConsultaDetalleP21EstadoPresenteHttpPostIn" />
+      <wsdl:output message="tns:ConsultaDetalleP21EstadoPresenteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21LeccEstadoP">
+      <wsdl:input message="tns:ConsultaDetalleP21LeccEstadoPHttpPostIn" />
+      <wsdl:output message="tns:ConsultaDetalleP21LeccEstadoPHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21CompEstadoP">
+      <wsdl:input message="tns:ConsultaDetalleP21CompEstadoPHttpPostIn" />
+      <wsdl:output message="tns:ConsultaDetalleP21CompEstadoPHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoDireccionesRegionales">
+      <wsdl:input message="tns:ObtenerCatalogoDireccionesRegionalesHttpPostIn" />
+      <wsdl:output message="tns:ObtenerCatalogoDireccionesRegionalesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependencias">
+      <wsdl:input message="tns:ConsultaDependenciasHttpPostIn" />
+      <wsdl:output message="tns:ConsultaDependenciasHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoCentrosEducativos">
+      <wsdl:input message="tns:ObtenerCatalogoCentrosEducativosHttpPostIn" />
+      <wsdl:output message="tns:ObtenerCatalogoCentrosEducativosHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoClaseDePuestos">
+      <wsdl:input message="tns:ObtenerCatalogoClaseDePuestosHttpPostIn" />
+      <wsdl:output message="tns:ObtenerCatalogoClaseDePuestosHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoEspecialidades">
+      <wsdl:input message="tns:ObtenerCatalogoEspecialidadesHttpPostIn" />
+      <wsdl:output message="tns:ObtenerCatalogoEspecialidadesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependenciaxCodigo">
+      <wsdl:input message="tns:ConsultaDependenciaxCodigoHttpPostIn" />
+      <wsdl:output message="tns:ConsultaDependenciaxCodigoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaSuprograma00">
+      <wsdl:input message="tns:ConsultaSuprograma00HttpPostIn" />
+      <wsdl:output message="tns:ConsultaSuprograma00HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidaDependencia">
+      <wsdl:input message="tns:ValidaDependenciaHttpPostIn" />
+      <wsdl:output message="tns:ValidaDependenciaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependencia">
+      <wsdl:input message="tns:ConsultaDependenciaHttpPostIn" />
+      <wsdl:output message="tns:ConsultaDependenciaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEscalaSalarialRige">
+      <wsdl:input message="tns:ConsultarEscalaSalarialRigeHttpPostIn" />
+      <wsdl:output message="tns:ConsultarEscalaSalarialRigeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaNombramientosXFuncionario">
+      <wsdl:input message="tns:ConsultaNombramientosXFuncionarioHttpPostIn" />
+      <wsdl:output message="tns:ConsultaNombramientosXFuncionarioHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaNombramientosXInstitucion">
+      <wsdl:input message="tns:ConsultaNombramientosXInstitucionHttpPostIn" />
+      <wsdl:output message="tns:ConsultaNombramientosXInstitucionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaINSTITUCIONESXFUNCIONARIO">
+      <wsdl:input message="tns:ConsultaINSTITUCIONESXFUNCIONARIOHttpPostIn" />
+      <wsdl:output message="tns:ConsultaINSTITUCIONESXFUNCIONARIOHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaCiruitosXRegion">
+      <wsdl:input message="tns:IDP_ConsultaCiruitosXRegionHttpPostIn" />
+      <wsdl:output message="tns:IDP_ConsultaCiruitosXRegionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaDependenciaXRegion">
+      <wsdl:input message="tns:IDP_ConsultaDependenciaXRegionHttpPostIn" />
+      <wsdl:output message="tns:IDP_ConsultaDependenciaXRegionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaFuncionariosXDependencia">
+      <wsdl:input message="tns:IDP_ConsultaFuncionariosXDependenciaHttpPostIn" />
+      <wsdl:output message="tns:IDP_ConsultaFuncionariosXDependenciaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarInfoFuncionarioViaticos">
+      <wsdl:input message="tns:ConsultarInfoFuncionarioViaticosHttpPostIn" />
+      <wsdl:output message="tns:ConsultarInfoFuncionarioViaticosHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOcupacionPlaza">
+      <wsdl:input message="tns:ConsultaOcupacionPlazaHttpPostIn" />
+      <wsdl:output message="tns:ConsultaOcupacionPlazaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPlazaVacante">
+      <wsdl:input message="tns:ConsultarPlazaVacanteHttpPostIn" />
+      <wsdl:output message="tns:ConsultarPlazaVacanteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaLeccionesInstitucion">
+      <wsdl:input message="tns:ConsultaLeccionesInstitucionHttpPostIn" />
+      <wsdl:output message="tns:ConsultaLeccionesInstitucionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaProduccionNombramientos">
+      <wsdl:input message="tns:ConsultaProduccionNombramientosHttpPostIn" />
+      <wsdl:output message="tns:ConsultaProduccionNombramientosHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebIntegraSoap" type="tns:WebIntegraSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObtieneDatosFuncionarioXCed">
+      <soap:operation soapAction="http://tempuri.org/ObtieneDatosFuncionarioXCed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneDomicilio">
+      <soap:operation soapAction="http://tempuri.org/ObtieneDomicilio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneDatosFuncionarioXNombre">
+      <soap:operation soapAction="http://tempuri.org/ObtieneDatosFuncionarioXNombre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarCedulaUsuario">
+      <soap:operation soapAction="http://tempuri.org/ValidarCedulaUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDatosFuncionario">
+      <soap:operation soapAction="http://tempuri.org/ObtenerDatosFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaEstadoFuncionario">
+      <soap:operation soapAction="http://tempuri.org/ConsultaEstadoFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EjecutaConsultaFuncionariosActivos">
+      <soap:operation soapAction="http://tempuri.org/EjecutaConsultaFuncionariosActivos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaAccionesXFuncionario">
+      <soap:operation soapAction="http://tempuri.org/ConsultaAccionesXFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaP21XFuncionario">
+      <soap:operation soapAction="http://tempuri.org/ConsultaP21XFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21">
+      <soap:operation soapAction="http://tempuri.org/ConsultaDetalleP21" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21Lecciones">
+      <soap:operation soapAction="http://tempuri.org/ConsultaDetalleP21Lecciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21Componentes">
+      <soap:operation soapAction="http://tempuri.org/ConsultaDetalleP21Componentes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21EstadoPresente">
+      <soap:operation soapAction="http://tempuri.org/ConsultaDetalleP21EstadoPresente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21LeccEstadoP">
+      <soap:operation soapAction="http://tempuri.org/ConsultaDetalleP21LeccEstadoP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21CompEstadoP">
+      <soap:operation soapAction="http://tempuri.org/ConsultaDetalleP21CompEstadoP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoDireccionesRegionales">
+      <soap:operation soapAction="http://tempuri.org/ObtenerCatalogoDireccionesRegionales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependencias">
+      <soap:operation soapAction="http://tempuri.org/ConsultaDependencias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoCentrosEducativos">
+      <soap:operation soapAction="http://tempuri.org/ObtenerCatalogoCentrosEducativos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoClaseDePuestos">
+      <soap:operation soapAction="http://tempuri.org/ObtenerCatalogoClaseDePuestos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoEspecialidades">
+      <soap:operation soapAction="http://tempuri.org/ObtenerCatalogoEspecialidades" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependenciaxCodigo">
+      <soap:operation soapAction="http://tempuri.org/ConsultaDependenciaxCodigo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaSuprograma00">
+      <soap:operation soapAction="http://tempuri.org/ConsultaSuprograma00" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaDependencia">
+      <soap:operation soapAction="http://tempuri.org/ValidaDependencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependencia">
+      <soap:operation soapAction="http://tempuri.org/ConsultaDependencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEscalaSalarialRige">
+      <soap:operation soapAction="http://tempuri.org/ConsultarEscalaSalarialRige" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaNombramientosXFuncionario">
+      <soap:operation soapAction="http://tempuri.org/ConsultaNombramientosXFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaNombramientosXInstitucion">
+      <soap:operation soapAction="http://tempuri.org/ConsultaNombramientosXInstitucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaINSTITUCIONESXFUNCIONARIO">
+      <soap:operation soapAction="http://tempuri.org/ConsultaINSTITUCIONESXFUNCIONARIO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaCiruitosXRegion">
+      <soap:operation soapAction="http://tempuri.org/IDP_ConsultaCiruitosXRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaDependenciaXRegion">
+      <soap:operation soapAction="http://tempuri.org/IDP_ConsultaDependenciaXRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaFuncionariosXDependencia">
+      <soap:operation soapAction="http://tempuri.org/IDP_ConsultaFuncionariosXDependencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarInfoFuncionarioViaticos">
+      <soap:operation soapAction="http://tempuri.org/ConsultarInfoFuncionarioViaticos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOcupacionPlaza">
+      <soap:operation soapAction="http://tempuri.org/ConsultaOcupacionPlaza" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPlazaVacante">
+      <soap:operation soapAction="http://tempuri.org/ConsultarPlazaVacante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaLeccionesInstitucion">
+      <soap:operation soapAction="http://tempuri.org/ConsultaLeccionesInstitucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaProduccionNombramientos">
+      <soap:operation soapAction="http://tempuri.org/ConsultaProduccionNombramientos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebIntegraSoap12" type="tns:WebIntegraSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObtieneDatosFuncionarioXCed">
+      <soap12:operation soapAction="http://tempuri.org/ObtieneDatosFuncionarioXCed" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneDomicilio">
+      <soap12:operation soapAction="http://tempuri.org/ObtieneDomicilio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneDatosFuncionarioXNombre">
+      <soap12:operation soapAction="http://tempuri.org/ObtieneDatosFuncionarioXNombre" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarCedulaUsuario">
+      <soap12:operation soapAction="http://tempuri.org/ValidarCedulaUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDatosFuncionario">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerDatosFuncionario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaEstadoFuncionario">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaEstadoFuncionario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EjecutaConsultaFuncionariosActivos">
+      <soap12:operation soapAction="http://tempuri.org/EjecutaConsultaFuncionariosActivos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaAccionesXFuncionario">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaAccionesXFuncionario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaP21XFuncionario">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaP21XFuncionario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaDetalleP21" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21Lecciones">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaDetalleP21Lecciones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21Componentes">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaDetalleP21Componentes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21EstadoPresente">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaDetalleP21EstadoPresente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21LeccEstadoP">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaDetalleP21LeccEstadoP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21CompEstadoP">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaDetalleP21CompEstadoP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoDireccionesRegionales">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerCatalogoDireccionesRegionales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependencias">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaDependencias" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoCentrosEducativos">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerCatalogoCentrosEducativos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoClaseDePuestos">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerCatalogoClaseDePuestos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoEspecialidades">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerCatalogoEspecialidades" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependenciaxCodigo">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaDependenciaxCodigo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaSuprograma00">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaSuprograma00" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaDependencia">
+      <soap12:operation soapAction="http://tempuri.org/ValidaDependencia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependencia">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaDependencia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEscalaSalarialRige">
+      <soap12:operation soapAction="http://tempuri.org/ConsultarEscalaSalarialRige" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaNombramientosXFuncionario">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaNombramientosXFuncionario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaNombramientosXInstitucion">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaNombramientosXInstitucion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaINSTITUCIONESXFUNCIONARIO">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaINSTITUCIONESXFUNCIONARIO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaCiruitosXRegion">
+      <soap12:operation soapAction="http://tempuri.org/IDP_ConsultaCiruitosXRegion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaDependenciaXRegion">
+      <soap12:operation soapAction="http://tempuri.org/IDP_ConsultaDependenciaXRegion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaFuncionariosXDependencia">
+      <soap12:operation soapAction="http://tempuri.org/IDP_ConsultaFuncionariosXDependencia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarInfoFuncionarioViaticos">
+      <soap12:operation soapAction="http://tempuri.org/ConsultarInfoFuncionarioViaticos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOcupacionPlaza">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaOcupacionPlaza" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPlazaVacante">
+      <soap12:operation soapAction="http://tempuri.org/ConsultarPlazaVacante" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaLeccionesInstitucion">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaLeccionesInstitucion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaProduccionNombramientos">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaProduccionNombramientos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebIntegraHttpGet" type="tns:WebIntegraHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="ObtieneDatosFuncionarioXCed">
+      <http:operation location="/ObtieneDatosFuncionarioXCed" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneDomicilio">
+      <http:operation location="/ObtieneDomicilio" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneDatosFuncionarioXNombre">
+      <http:operation location="/ObtieneDatosFuncionarioXNombre" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarCedulaUsuario">
+      <http:operation location="/ValidarCedulaUsuario" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDatosFuncionario">
+      <http:operation location="/ObtenerDatosFuncionario" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaEstadoFuncionario">
+      <http:operation location="/ConsultaEstadoFuncionario" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EjecutaConsultaFuncionariosActivos">
+      <http:operation location="/EjecutaConsultaFuncionariosActivos" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaAccionesXFuncionario">
+      <http:operation location="/ConsultaAccionesXFuncionario" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaP21XFuncionario">
+      <http:operation location="/ConsultaP21XFuncionario" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21">
+      <http:operation location="/ConsultaDetalleP21" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21Lecciones">
+      <http:operation location="/ConsultaDetalleP21Lecciones" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21Componentes">
+      <http:operation location="/ConsultaDetalleP21Componentes" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21EstadoPresente">
+      <http:operation location="/ConsultaDetalleP21EstadoPresente" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21LeccEstadoP">
+      <http:operation location="/ConsultaDetalleP21LeccEstadoP" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21CompEstadoP">
+      <http:operation location="/ConsultaDetalleP21CompEstadoP" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoDireccionesRegionales">
+      <http:operation location="/ObtenerCatalogoDireccionesRegionales" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependencias">
+      <http:operation location="/ConsultaDependencias" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoCentrosEducativos">
+      <http:operation location="/ObtenerCatalogoCentrosEducativos" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoClaseDePuestos">
+      <http:operation location="/ObtenerCatalogoClaseDePuestos" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoEspecialidades">
+      <http:operation location="/ObtenerCatalogoEspecialidades" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependenciaxCodigo">
+      <http:operation location="/ConsultaDependenciaxCodigo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaSuprograma00">
+      <http:operation location="/ConsultaSuprograma00" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaDependencia">
+      <http:operation location="/ValidaDependencia" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependencia">
+      <http:operation location="/ConsultaDependencia" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEscalaSalarialRige">
+      <http:operation location="/ConsultarEscalaSalarialRige" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaNombramientosXFuncionario">
+      <http:operation location="/ConsultaNombramientosXFuncionario" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaNombramientosXInstitucion">
+      <http:operation location="/ConsultaNombramientosXInstitucion" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaINSTITUCIONESXFUNCIONARIO">
+      <http:operation location="/ConsultaINSTITUCIONESXFUNCIONARIO" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaCiruitosXRegion">
+      <http:operation location="/IDP_ConsultaCiruitosXRegion" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaDependenciaXRegion">
+      <http:operation location="/IDP_ConsultaDependenciaXRegion" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaFuncionariosXDependencia">
+      <http:operation location="/IDP_ConsultaFuncionariosXDependencia" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarInfoFuncionarioViaticos">
+      <http:operation location="/ConsultarInfoFuncionarioViaticos" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOcupacionPlaza">
+      <http:operation location="/ConsultaOcupacionPlaza" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPlazaVacante">
+      <http:operation location="/ConsultarPlazaVacante" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaLeccionesInstitucion">
+      <http:operation location="/ConsultaLeccionesInstitucion" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaProduccionNombramientos">
+      <http:operation location="/ConsultaProduccionNombramientos" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebIntegraHttpPost" type="tns:WebIntegraHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="ObtieneDatosFuncionarioXCed">
+      <http:operation location="/ObtieneDatosFuncionarioXCed" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneDomicilio">
+      <http:operation location="/ObtieneDomicilio" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneDatosFuncionarioXNombre">
+      <http:operation location="/ObtieneDatosFuncionarioXNombre" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarCedulaUsuario">
+      <http:operation location="/ValidarCedulaUsuario" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDatosFuncionario">
+      <http:operation location="/ObtenerDatosFuncionario" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaEstadoFuncionario">
+      <http:operation location="/ConsultaEstadoFuncionario" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EjecutaConsultaFuncionariosActivos">
+      <http:operation location="/EjecutaConsultaFuncionariosActivos" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaAccionesXFuncionario">
+      <http:operation location="/ConsultaAccionesXFuncionario" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaP21XFuncionario">
+      <http:operation location="/ConsultaP21XFuncionario" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21">
+      <http:operation location="/ConsultaDetalleP21" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21Lecciones">
+      <http:operation location="/ConsultaDetalleP21Lecciones" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21Componentes">
+      <http:operation location="/ConsultaDetalleP21Componentes" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21EstadoPresente">
+      <http:operation location="/ConsultaDetalleP21EstadoPresente" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21LeccEstadoP">
+      <http:operation location="/ConsultaDetalleP21LeccEstadoP" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDetalleP21CompEstadoP">
+      <http:operation location="/ConsultaDetalleP21CompEstadoP" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoDireccionesRegionales">
+      <http:operation location="/ObtenerCatalogoDireccionesRegionales" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependencias">
+      <http:operation location="/ConsultaDependencias" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoCentrosEducativos">
+      <http:operation location="/ObtenerCatalogoCentrosEducativos" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoClaseDePuestos">
+      <http:operation location="/ObtenerCatalogoClaseDePuestos" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoEspecialidades">
+      <http:operation location="/ObtenerCatalogoEspecialidades" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependenciaxCodigo">
+      <http:operation location="/ConsultaDependenciaxCodigo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaSuprograma00">
+      <http:operation location="/ConsultaSuprograma00" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaDependencia">
+      <http:operation location="/ValidaDependencia" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDependencia">
+      <http:operation location="/ConsultaDependencia" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEscalaSalarialRige">
+      <http:operation location="/ConsultarEscalaSalarialRige" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaNombramientosXFuncionario">
+      <http:operation location="/ConsultaNombramientosXFuncionario" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaNombramientosXInstitucion">
+      <http:operation location="/ConsultaNombramientosXInstitucion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaINSTITUCIONESXFUNCIONARIO">
+      <http:operation location="/ConsultaINSTITUCIONESXFUNCIONARIO" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaCiruitosXRegion">
+      <http:operation location="/IDP_ConsultaCiruitosXRegion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaDependenciaXRegion">
+      <http:operation location="/IDP_ConsultaDependenciaXRegion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IDP_ConsultaFuncionariosXDependencia">
+      <http:operation location="/IDP_ConsultaFuncionariosXDependencia" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarInfoFuncionarioViaticos">
+      <http:operation location="/ConsultarInfoFuncionarioViaticos" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOcupacionPlaza">
+      <http:operation location="/ConsultaOcupacionPlaza" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPlazaVacante">
+      <http:operation location="/ConsultarPlazaVacante" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaLeccionesInstitucion">
+      <http:operation location="/ConsultaLeccionesInstitucion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaProduccionNombramientos">
+      <http:operation location="/ConsultaProduccionNombramientos" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebIntegra">
+    <wsdl:port name="WebIntegraSoap" binding="tns:WebIntegraSoap">
+      <soap:address location="http://aplicaciones.intranet.mep.go.cr/WebServiceIntegra/WebIntegra.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebIntegraSoap12" binding="tns:WebIntegraSoap12">
+      <soap12:address location="http://aplicaciones.intranet.mep.go.cr/WebServiceIntegra/WebIntegra.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebIntegraHttpGet" binding="tns:WebIntegraHttpGet">
+      <http:address location="http://aplicaciones.intranet.mep.go.cr/WebServiceIntegra/WebIntegra.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebIntegraHttpPost" binding="tns:WebIntegraHttpPost">
+      <http:address location="http://aplicaciones.intranet.mep.go.cr/WebServiceIntegra/WebIntegra.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

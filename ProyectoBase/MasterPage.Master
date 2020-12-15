@@ -1,0 +1,123 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MasterPage.master.vb" Inherits="CapPresentacionSiReGe.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Ministerio de Educación Pública.- Sistema Registro de Gestiones</title>
+   
+    
+    <link rel="shortcut icon" href="Contenido/Imagenes/MEP.ico" type="image/x-icon" />
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link rel="stylesheet" href="Contenido/Estilos.css" />
+    <script type="text/javascript">
+        // Definicion del titulo y el boton de la ventana de mensaje
+        var ALERT_TITLE = "Sistema Registro de Gestiones";
+        var ALERT_BUTTON_TEXT = "Ok";
+
+        // Se sobreescribe el metodo alert en el explorador
+        if (document.getElementById) {
+            window.alert = function (txt) {
+                createCustomAlert(txt);
+            }
+        }
+        function createCustomAlert(txt) {
+            d = document;
+
+            // Verifica si ya existe en DOM la ventana
+            if (d.getElementById("modalContainer")) return;
+
+            // Creacion del contenedor de la ventana de mensajes
+            mObj = d.getElementsByTagName("body")[0].appendChild(d.createElement("div"));
+            mObj.id = "modalContainer";
+            mObj.style.height = document.documentElement.scrollHeight + "px";
+
+            alertObj = mObj.appendChild(d.createElement("div"));
+            alertObj.id = "alertBox";
+            // MSIE doesnt treat position:fixed correctly, so this compensates for positioning the alert
+            //if (d.all && !window.opera) alertObj.style.top = document.documentElement.clientHeight / 3 + "px";
+            // Centra la ventana de mensajaes
+            alertObj.style.left = (d.documentElement.scrollWidth - alertObj.offsetWidth) / 2 + "px";
+
+            h1 = alertObj.appendChild(d.createElement("h1"));
+            h1.appendChild(d.createTextNode(ALERT_TITLE));
+
+            msg = alertObj.appendChild(d.createElement("p"));
+            msg.innerHTML = txt;
+
+            btn = alertObj.appendChild(d.createElement("a"));
+            btn.id = "closeBtn";
+            btn.appendChild(d.createTextNode(ALERT_BUTTON_TEXT));
+            btn.href = "#";
+
+            btn.onclick = function () { removeCustomAlert(); return false; }
+        }
+
+        // Borra la ventana de alerta del DOM
+        function removeCustomAlert() {
+            document.getElementsByTagName("body")[0].removeChild(document.getElementById("modalContainer"));
+        }
+    </script>
+
+    <style type="text/css">
+        .auto-style1 {
+            float: left;
+            height: 21px;
+            padding: 15px 15px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="fondo" >
+    <form id="form2" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
+        </asp:ScriptManager>
+        <div id="pagina">
+            <div id="encabezado">
+                <asp:Label ID="Label6" runat="server" Font-Bold="true" Text="Usuario: "></asp:Label>
+                <asp:Label ID="lblNombreUsuario" runat="server" Font-Bold="True" Visible="False"></asp:Label>
+                &nbsp;
+                <asp:Label ID="lblPerfil" runat="server"></asp:Label>
+                <asp:Label ID="lblDescripcion" runat="server" Visible="true"></asp:Label>
+                <asp:Label ID="lblUsuario" runat="server" Visible="false"></asp:Label>
+                &nbsp;&nbsp;&nbsp;
+            </div>
+            <div id="EncabezadoSistema">
+                <br />
+                Sistema Registro de Gestiones</div>
+            <div id="separador">
+            </div>
+            <div id="menu">
+                <asp:Menu ID="Menu1" runat="server" Font-Names="Segoe UI" ForeColor="White" MaximumDynamicDisplayLevels="5" Orientation="Horizontal" RenderingMode="Table" StaticSubMenuIndent="5px">
+                    <StaticMenuItemStyle Font-Size="17px" HorizontalPadding="5px" />
+                    <DynamicHoverStyle BackColor="#006690" ForeColor="White" />
+                    <StaticMenuStyle HorizontalPadding="5px" />
+                    <DynamicMenuItemStyle BackColor="lightslategray" Font-Size="15px" HorizontalPadding="15px" />
+                </asp:Menu>
+            </div>
+            <div id="ContenedorPrincipal">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="piepagina">
+                <table id="tablapiepagina">
+                    <tr>
+                        <td style="text-align:center; width:350px;">
+                            <asp:Label ID="lblVersion" runat="server" Text="Versión del Sistema:"></asp:Label>
+                        </td>
+                        <td style="text-align:center; width:650px;">© 2020, Ministerio de Educación Pública de Costa Rica. Todos los derechos reservados.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br />
+        <p>
+            &nbsp;</p>
+    </form>
+</body>
+</html>
+
