@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class Casos
-    
+
     '''<summary>
     '''Control btnAgregar.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents btnAgregar As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control btnBorrar.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents btnBorrar As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control btnExportar.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents btnExportar As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control btnVolver.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents btnVolver As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control grdCharges.
     '''</summary>
@@ -57,7 +57,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents grdCharges As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
+
     '''<summary>
     '''Control GridViewCasos.
     '''</summary>
@@ -66,7 +66,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents GridViewCasos As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''Control SqlDataSource1.
     '''</summary>
@@ -75,7 +75,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
-    
+
     '''<summary>
     '''Control lnkFake.
     '''</summary>
@@ -84,7 +84,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents lnkFake As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''Control mpe.
     '''</summary>
@@ -93,7 +93,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents mpe As Global.AjaxControlToolkit.ModalPopupExtender
-    
+
     '''<summary>
     '''Control pnlPopup.
     '''</summary>
@@ -102,7 +102,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents pnlPopup As Global.System.Web.UI.WebControls.Panel
-    
+
     '''<summary>
     '''Control Label1.
     '''</summary>
@@ -111,7 +111,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control txtId_Caso.
     '''</summary>
@@ -120,7 +120,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtId_Caso As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtNumCaso.
     '''</summary>
@@ -129,7 +129,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtNumCaso As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtEstadoCaso.
     '''</summary>
@@ -138,7 +138,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtEstadoCaso As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtFechaCaso.
     '''</summary>
@@ -147,7 +147,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtFechaCaso As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtCedulaUsuario.
     '''</summary>
@@ -156,7 +156,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtCedulaUsuario As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtNombreUsuario.
     '''</summary>
@@ -165,7 +165,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtNombreUsuario As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtempleado.
     '''</summary>
@@ -174,7 +174,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtempleado As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtCE.
     '''</summary>
@@ -183,7 +183,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtCE As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtUnidad.
     '''</summary>
@@ -192,7 +192,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtUnidad As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtDespacho.
     '''</summary>
@@ -201,7 +201,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtDespacho As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtDireccion.
     '''</summary>
@@ -210,7 +210,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtDireccion As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtDepartamento.
     '''</summary>
@@ -219,7 +219,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtDepartamento As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtDimension.
     '''</summary>
@@ -228,7 +228,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtDimension As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtLetraDim.
     '''</summary>
@@ -237,7 +237,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtLetraDim As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control lblDetalleDim.
     '''</summary>
@@ -246,7 +246,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents lblDetalleDim As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control txtNumOficio.
     '''</summary>
@@ -255,7 +255,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtNumOficio As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtFechaOficio.
     '''</summary>
@@ -264,7 +264,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtFechaOficio As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtCondicionCaso.
     '''</summary>
@@ -273,7 +273,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtCondicionCaso As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control lblDetalleInconformidad.
     '''</summary>
@@ -282,7 +282,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents lblDetalleInconformidad As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control lblRespuesta_Caso.
     '''</summary>
@@ -291,7 +291,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents lblRespuesta_Caso As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control txtFechaRespuesta.
     '''</summary>
@@ -300,7 +300,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtFechaRespuesta As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtValoracionAdmisibilidad.
     '''</summary>
@@ -309,7 +309,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtValoracionAdmisibilidad As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtVeredicto.
     '''</summary>
@@ -318,7 +318,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtVeredicto As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtTrazabilidad.
     '''</summary>
@@ -327,7 +327,7 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtTrazabilidad As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtFechaCerrado.
     '''</summary>
@@ -336,7 +336,16 @@ Partial Public Class Casos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtFechaCerrado As Global.System.Web.UI.WebControls.TextBox
-    
+
+    '''<summary>
+    '''Control btnExportarWord.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnExportarWord As Global.System.Web.UI.WebControls.Button
+
     '''<summary>
     '''Control btnClose.
     '''</summary>

@@ -189,6 +189,7 @@
                                 </table>                               
                            </div>                           
                            <div class="footer" style="float: right">
+                               <asp:Button Text="Exportar Información" ID="btnExportarWord" runat="server" CssClass="button" OnClick="ExportarWord_Click" />
                                <asp:Button ID="btnClose" runat="server" Text="Cerrar" CssClass="button"/>
                            </div>
                        </asp:Panel>

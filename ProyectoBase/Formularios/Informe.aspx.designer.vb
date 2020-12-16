@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class Informe
-    
+
     '''<summary>
     '''Control btnAgregar.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents btnAgregar As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control btnBorrar.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents btnBorrar As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control btnExportar.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents btnExportar As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control btnVolver.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents btnVolver As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control grdCharges.
     '''</summary>
@@ -57,7 +57,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents grdCharges As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
+
     '''<summary>
     '''Control GridViewInforme.
     '''</summary>
@@ -66,7 +66,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents GridViewInforme As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''Control SqlDataSource1.
     '''</summary>
@@ -75,7 +75,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
-    
+
     '''<summary>
     '''Control lnkFake.
     '''</summary>
@@ -84,7 +84,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents lnkFake As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''Control mpe.
     '''</summary>
@@ -93,7 +93,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents mpe As Global.AjaxControlToolkit.ModalPopupExtender
-    
+
     '''<summary>
     '''Control pnlPopup.
     '''</summary>
@@ -102,7 +102,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents pnlPopup As Global.System.Web.UI.WebControls.Panel
-    
+
     '''<summary>
     '''Control Label1.
     '''</summary>
@@ -111,7 +111,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control txtId_Informe.
     '''</summary>
@@ -120,7 +120,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtId_Informe As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtTitulo_Informe.
     '''</summary>
@@ -129,7 +129,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtTitulo_Informe As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtEmpleado_Informe.
     '''</summary>
@@ -138,7 +138,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtEmpleado_Informe As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtTipo_Informe.
     '''</summary>
@@ -147,7 +147,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtTipo_Informe As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtNumOficio_Informe.
     '''</summary>
@@ -156,7 +156,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtNumOficio_Informe As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtFechaAprobacion.
     '''</summary>
@@ -165,7 +165,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtFechaAprobacion As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtFechaCulminacion.
     '''</summary>
@@ -174,7 +174,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtFechaCulminacion As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtFechaTraslado.
     '''</summary>
@@ -183,7 +183,7 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtFechaTraslado As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control txtAvance_Informe.
     '''</summary>
@@ -192,7 +192,16 @@ Partial Public Class Informe
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtAvance_Informe As Global.System.Web.UI.WebControls.TextBox
-    
+
+    '''<summary>
+    '''Control btnExportarWord.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnExportarWord As Global.System.Web.UI.WebControls.Button
+
     '''<summary>
     '''Control btnClose.
     '''</summary>

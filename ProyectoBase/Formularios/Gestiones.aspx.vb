@@ -53,7 +53,29 @@ Public Class Gestiones
         ExportGridView()
     End Sub
 
+    Protected Sub ExportarWord_Click(sender As Object, e As EventArgs) Handles btnExportarWord.Click
+        ExportaWord()
+    End Sub
 
+    Protected Sub ExportaWord()
+        Response.Clear()
+        Response.Buffer = True
+        Response.ContentType = "application/vnd.word"
+        Response.ContentEncoding = System.Text.Encoding.UTF8
+        Response.AddHeader("Content-Disposition", "attachment;filename=Gestion.doc")
+        Response.Charset = ""
+        EnableViewState = False
+        Dim table As New Table()
+        Dim row As New TableRow()
+        row.Cells.Add(New TableCell())
+        row.Cells(0).Controls.Add(pnlPopup)
+        table.Rows.Add(row)
+        Dim oStringWriter As New System.IO.StringWriter()
+        Dim oHtmlTextWriter As New System.Web.UI.HtmlTextWriter(oStringWriter)
+        table.RenderControl(oHtmlTextWriter)
+        Response.Write(oStringWriter.ToString())
+        Response.[End]()
+    End Sub
     Sub Reporte()
 #Region "Mostrar Tabla"
         'Dim dsGestiones As New GestionesReport()

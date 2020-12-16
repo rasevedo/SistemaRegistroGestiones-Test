@@ -347,6 +347,15 @@ Partial Public Class Gestiones
     Protected WithEvents lblRespuesta_Gestion As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''Control btnExportarWord.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnExportarWord As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''Control btnClose.
     '''</summary>
     '''<remarks>
